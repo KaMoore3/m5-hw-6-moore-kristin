@@ -1,30 +1,28 @@
-* {
-    margin: 0; 
-    padding: 0; 
-    border: 0;}
 body {
-    margin: auto; 
+    margin: auto;
+    min-height: vh100;
+    display: flex;
+    flex-direction: column;
     background-color: #dde5db;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%2398ac92' fill-opacity='0.4'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E");
 }
-.container {
-    max-width: 900px;
+main, nav {
+    max-width: 800px;
     margin: 0 auto;
+    padding: 0 10px;
 }
-header {
+header, footer {
     background-color: darkolivegreen; 
     color: white; 
     padding: 40px; 
     border-bottom: 3px solid darkgray;
 }
-nav {
-    width: 45%; 
-    display: inline-block; 
-    text-align: right;
-}
-nav a {
-    color: white; 
-    margin: 0 10px; 
+nav {display: flex;
+justify-content: center;}
+.logo {margin-right: auto;}
+.link {margin: 0 4px;}
+.logo, .link {
+    color: white;
     text-decoration: none; 
     font-weight: bold; 
     text-transform: uppercase; 
@@ -33,10 +31,6 @@ nav a {
     padding: 10px 10px;
     border-radius: 5px;
 }
-h1 {
-    width: 50%; 
-    display: inline-block;
-}
 h2 {
     font-family: monospace;
 }
@@ -44,25 +38,16 @@ h2 {
     float: left;
     padding: 0 20px 20px 0;
 }
-main::after {
-    content: none;
-    clear: both;
-    display: block;
-}
 footer {
-    background-color: lightgray;
-    text-align: center;
-    padding: 20px 0;
+  text-align: center;
+  margin-top: auto;
 }
+
 main {
-    width: 60%;
-    display: inline-block;
     padding: 20px; 
     background-color: white;
 }
-aside {width: 25%;
-display: inline-block;
-vertical-align: top;
+.container {display: flex;}
 padding: 20px; 
 background-color: white;}
 p {
@@ -74,3 +59,7 @@ main p {
 .main-content {
     margin: 20px auto;
 }
+aside {margin: 0 20px;
+    padding: 10px;
+    max-height: 80px;
+    background-color: white;}
