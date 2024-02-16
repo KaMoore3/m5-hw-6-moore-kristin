@@ -15,7 +15,7 @@ main, nav, .container {
     padding: 0 12px;     
     }
 
-    nav {
+nav {
     display: flex;
     flex-wrap: wrap;
     }
