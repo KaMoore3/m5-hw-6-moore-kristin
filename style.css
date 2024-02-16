@@ -1,56 +1,65 @@
 body {
-    margin: auto;
+    margin: 0;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     background-color: #dde5db;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%2398ac92' fill-opacity='0.4'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E");
 }
-main, nav {
+main, nav, .container {
     max-width: 800px;
     margin: 0 auto;
-    padding: 0 10px;
+    display: flex;
+    padding: 0 12px;     
+    }
+    nav {
+        display: flex;
+    }
+.logo {
+    margin-right: auto;
 }
-footer {
-    text-align: center;
-  }
-header, footer {
-    background-color: darkolivegreen; 
-    color: white; 
-    padding: 40px; 
-    border-bottom: 3px solid darkgray;
+.link {
+    margin: 0 4px;
+
 }
-nav {display: flex;
-justify-content: center;}
-  .logo {margin-right: auto;}
-  .link {margin: 0 4px;}
-  .logo, .link {
+.logo, .link {
     color: white;
     text-decoration: none; 
     font-weight: bold; 
-    text-transform: uppercase; 
+    text-transform: uppercase;
+    ; 
     font-family: sans-serif;
     background-color: rgb(64, 5, 5);
     padding: 10px 10px;
     border-radius: 5px;
+
+
 }
+footer {
+    text-align: center;
+    margin-top: auto;
+
+  }
+header, footer {
+    background-color: darkolivegreen; 
+    color: white; 
+    padding: 24px 0;
+}
+
 h1, h2 {
     font-family: monospace;
 }
 .headshot {
     float: left;
     padding: 0 20px 20px 0;
+    max-width: 150px;
 }
-.container main-content {
-    display: flex;
-}
+
 main {
-    min-height: 100vh;
-    margin: 20px auto;
-    padding: 20px; 
     background-color: white;
 }
 .container {
-    display: flex;
+    gap: 10px;
 }
 p {
     margin: 15px 0;
@@ -59,7 +68,12 @@ main p {
     line-height: 120%;
 }
 aside {
-    margin: 20px 20px;
-    padding: 10px;
-    max-height: 80px;
-    background-color: white;}
+    padding: 0 12px;
+    background-color: white;
+    max-height: 120px;
+}
+ul {
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+}
